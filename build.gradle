@@ -1,12 +1,12 @@
 buildscript {
-	repositories {
-		mavenLocal()
-		mavenCentral()
-		google()
-		gradlePluginPortal()
-		maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
-	}
-	dependencies {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+        mavenLocal()
+        google()
+        maven { url 'https://central.sonatype.com/repository/maven-snapshots/' }
+    }
+    dependencies {
 		classpath 'com.guardsquare:proguard-gradle:7.3.2'
 		classpath 'com.vanniktech:gradle-maven-publish-plugin:0.34.0'
 	}
@@ -33,7 +33,7 @@ configure(subprojects) {
 
 subprojects {
 	version = "$VERSION_NAME"
-	ext.appName = 'libgdx-tiledmappacker'
+	ext.appName = 'libgdx-flame'
 	repositories {
 		mavenLocal()
 		mavenCentral()
@@ -41,4 +41,4 @@ subprojects {
 	}
 }
 
-eclipse.project.name = 'libgdx-tiledmappacker' + '-parent'
+eclipse.project.name = 'libgdx-flame' + '-parent'

@@ -20,7 +20,7 @@
          java.lang.Object readResolve();
      }
 
--keep public class !com.badlogic.gdx.tiledmappacker** { *; }
+-keep public class !com.badlogic.gdx.tools.flame.** { *; }
 
 -forceprocessing
 #-classobfuscationdictionary 'obfuscationClassNames.txt'
